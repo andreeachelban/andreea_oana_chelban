@@ -5,7 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andreea-Oana Chelban | CV</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { box-sizing: border-box; margin: 0; padding: 0; 
+      body {
+  font-family: Inter, Arial, sans-serif;
+  color: #151515;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+  background: #f6f1ea;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("cellTracking.gif") center/cover no-repeat;
+  opacity: 0.10;
+  z-index: -2;
+  filter: blur(2px) grayscale(20%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(246, 241, 234, 0.82);
+  z-index: -1;
+}}
 
     body {
       font-family: Inter, Arial, sans-serif;
@@ -163,13 +189,6 @@
           <p class="intro">
             PhD student in Biological Physics at the Biozentrum, University of Basel, studying bacterial multicellular development through microscopy, quantitative image analysis, computational modelling and data-driven approaches.
           </p>
-          <img src="cellTracking.gif" class="tracking-gif" alt="Cell tracking microscopy visualization">
-          .tracking-gif {
-  width: 100%;
-  border-radius: 24px;
-  margin-top: 20px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.12);
-}
         </div>
         <div class="photo-card">
           <img src="andreea_chelban_9x9.jpg" alt="Portrait of Andreea-Oana Chelban" />

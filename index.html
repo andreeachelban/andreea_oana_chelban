@@ -3,300 +3,279 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andreea Chelban | CV</title>
+  <title>Andreea-Oana Chelban | CV</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       font-family: Inter, Arial, sans-serif;
-      background: #f4f1ec;
-      color: #161616;
+      background: #f6f1ea;
+      color: #151515;
       line-height: 1.6;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
 
-    .page {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 32px 20px 60px;
-    }
+    .page { max-width: 1150px; margin: 0 auto; padding: 34px 22px 70px; }
 
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 20px;
-      padding: 18px 0 50px;
+      padding-bottom: 54px;
     }
 
-    .logo {
-      font-weight: 800;
-      letter-spacing: -0.04em;
-      font-size: 24px;
-    }
+    .logo { font-size: 24px; font-weight: 900; letter-spacing: -0.05em; }
 
-    nav {
-      display: flex;
-      gap: 18px;
-      font-size: 14px;
-      color: #555;
-    }
-
-    nav a:hover {
-      color: #000;
-    }
+    nav { display: flex; gap: 18px; color: #555; font-size: 14px; }
+    nav a:hover { color: #000; }
 
     .hero {
       display: grid;
-      grid-template-columns: 1.3fr 0.7fr;
-      gap: 40px;
-      align-items: end;
-      margin-bottom: 70px;
+      grid-template-columns: 1fr 360px;
+      gap: 42px;
+      align-items: center;
+      margin-bottom: 34px;
     }
 
     .eyebrow {
-      color: #8b5e34;
-      font-weight: 700;
-      text-transform: uppercase;
+      color: #9a6233;
       font-size: 13px;
-      letter-spacing: 0.12em;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
       margin-bottom: 16px;
     }
 
     h1 {
-      font-size: clamp(48px, 9vw, 105px);
-      line-height: 0.9;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.92;
       letter-spacing: -0.08em;
-      max-width: 780px;
+      margin-bottom: 24px;
     }
 
-    .hero-card {
-      background: #161616;
-      color: #fff;
-      border-radius: 28px;
-      padding: 28px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+    .intro {
+      max-width: 660px;
+      font-size: 19px;
+      color: #3c3c3c;
     }
 
-    .hero-card p {
-      color: #d8d8d8;
-      margin-bottom: 22px;
+    .photo-card {
+      background: #151515;
+      border-radius: 34px;
+      padding: 14px;
+      box-shadow: 0 28px 70px rgba(0,0,0,0.18);
+      transform: rotate(1.5deg);
     }
 
-    .button {
-      display: inline-block;
-      background: #fff;
-      color: #111;
-      padding: 12px 18px;
-      border-radius: 999px;
-      font-weight: 700;
-      font-size: 14px;
+    .photo-card img {
+      width: 100%;
+      display: block;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 24px;
+      filter: saturate(0.96) contrast(1.02);
     }
 
-    .grid {
+    .quick-info {
       display: grid;
-      grid-template-columns: 0.7fr 1.3fr;
-      gap: 36px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
       margin-bottom: 34px;
     }
 
-    section {
-      background: rgba(255,255,255,0.55);
+    .pill-card, section {
+      background: rgba(255,255,255,0.68);
       border: 1px solid rgba(0,0,0,0.08);
       border-radius: 26px;
-      padding: 28px;
+      padding: 24px;
+    }
+
+    .pill-card span { display: block; color: #777; font-size: 13px; margin-bottom: 4px; }
+    .pill-card strong { font-size: 16px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 0.75fr 1.25fr;
+      gap: 26px;
+      margin-bottom: 26px;
     }
 
     h2 {
-      font-size: 15px;
+      color: #9a6233;
+      font-size: 14px;
       text-transform: uppercase;
       letter-spacing: 0.14em;
-      color: #8b5e34;
       margin-bottom: 22px;
     }
 
-    .item {
-      padding: 20px 0;
-      border-bottom: 1px solid rgba(0,0,0,0.08);
-    }
+    .item { padding: 20px 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+    .item:first-of-type { padding-top: 0; }
+    .item:last-child { border-bottom: none; padding-bottom: 0; }
 
-    .item:first-of-type {
-      padding-top: 0;
-    }
+    h3 { font-size: 21px; letter-spacing: -0.03em; margin-bottom: 5px; }
+    .meta { color: #666; font-size: 14px; margin-bottom: 9px; }
 
-    .item:last-child {
-      border-bottom: none;
-      padding-bottom: 0;
-    }
+    ul { padding-left: 20px; color: #333; }
+    li { margin-bottom: 8px; }
 
-    h3 {
-      font-size: 21px;
-      margin-bottom: 5px;
-      letter-spacing: -0.03em;
-    }
-
-    .meta {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
+    .tags { display: flex; flex-wrap: wrap; gap: 10px; }
     .tag {
-      background: #161616;
-      color: #fff;
+      background: #151515;
+      color: white;
       padding: 8px 12px;
       border-radius: 999px;
       font-size: 13px;
     }
 
-    .contact-list {
-      display: grid;
-      gap: 12px;
-      color: #333;
-    }
+    .full { grid-column: 1 / -1; }
 
-    .full {
-      grid-column: 1 / -1;
-    }
+    .contact-list { display: grid; gap: 10px; }
 
-    footer {
-      text-align: center;
-      color: #777;
-      font-size: 14px;
-      margin-top: 40px;
-    }
+    footer { margin-top: 38px; text-align: center; color: #777; font-size: 14px; }
 
-    @media (max-width: 780px) {
-      header, nav {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .hero, .grid {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 58px;
-      }
+    @media (max-width: 850px) {
+      header, nav { flex-direction: column; align-items: flex-start; }
+      .hero, .grid, .quick-info { grid-template-columns: 1fr; }
+      .photo-card { transform: none; max-width: 340px; }
     }
   </style>
 </head>
 <body>
   <div class="page">
     <header>
-      <div class="logo">AC.</div>
+      <div class="logo">AOC.</div>
       <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
         <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section class="hero" id="about">
+      <section class="hero">
         <div>
-          <p class="eyebrow">Curriculum Vitae</p>
-          <h1>Andreea Chelban</h1>
-        </div>
-        <div class="hero-card">
-          <p>
-            Modern, motivated and detail-oriented professional with strong communication,
-            organization and problem-solving skills. Passionate about learning, creating and
-            building meaningful work.
+          <p class="eyebrow">Biological Physics · Data-Driven Research · Basel</p>
+          <h1>Andreea-Oana Chelban</h1>
+          <p class="intro">
+            PhD student in Biological Physics at the Biozentrum, University of Basel, studying bacterial multicellular development through microscopy, quantitative image analysis, computational modelling and data-driven approaches.
           </p>
-          <a class="button" href="mailto:your.email@example.com">Contact Me</a>
+        </div>
+        <div class="photo-card">
+          <img src="profile.jpg" alt="Portrait of Andreea-Oana Chelban" />
         </div>
       </section>
 
+      <div class="quick-info">
+        <div class="pill-card"><span>Current role</span><strong>PhD Student</strong></div>
+        <div class="pill-card"><span>Location</span><strong>Basel, Switzerland</strong></div>
+        <div class="pill-card"><span>Field</span><strong>Biological Physics</strong></div>
+        <div class="pill-card"><span>Hobbies</span><strong>Running & Clay Modelling</strong></div>
+      </div>
+
       <div class="grid">
-        <section>
-          <h2>Profile</h2>
+        <section id="research">
+          <h2>Research Focus</h2>
           <p>
-            Write a short personal introduction here. Mention who you are, what you study or do,
-            your strengths, and what kind of opportunities you are looking for.
+            I work on the data-driven analysis of bacterial swarms, combining automated microscopy, image and time-series analysis, computational modelling and deep learning for single-cell segmentation and tracking.
           </p>
         </section>
 
-        <section id="experience">
-          <h2>Experience</h2>
+        <section>
+          <h2>Research Experience</h2>
           <div class="item">
-            <h3>Job Title / Role</h3>
-            <p class="meta">Company Name · 2024 — Present</p>
-            <p>Describe your responsibilities, achievements and the skills you used.</p>
+            <h3>PhD Project: Data-Driven Analysis of Bacterial Swarms</h3>
+            <p class="meta">Drescher Lab, Biozentrum, University of Basel · 2022 — Present</p>
+            <ul>
+              <li>Analysed large-scale microscopy datasets to study bacterial swarming as collective motion.</li>
+              <li>Designed automated microscopy workflows for high-throughput data acquisition.</li>
+              <li>Developed Matlab pipelines for image and time-series data analysis.</li>
+              <li>Applied deep learning methods for single-cell instance segmentation and tracking.</li>
+            </ul>
           </div>
           <div class="item">
-            <h3>Previous Role</h3>
-            <p class="meta">Company / Organization · 2022 — 2024</p>
-            <p>Describe another experience, internship, volunteering role or project.</p>
+            <h3>Master Project: Pattern Formation and Synchronisation</h3>
+            <p class="meta">LMU Munich · October 2020 — March 2022</p>
+            <ul>
+              <li>Developed and simulated reaction-diffusion models of protein pattern formation.</li>
+              <li>Used numerical schemes, correlation metrics, bifurcation analysis and parameter sweeps.</li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3>Bachelor Project: Effective Electric Field in YbF</h3>
+            <p class="meta">University of Groningen · April 2018 — July 2018</p>
+            <ul>
+              <li>Performed large-scale quantum chemistry calculations using relativistic coupled-cluster methods.</li>
+              <li>Ran high-performance computations on the Peregrine HPC cluster.</li>
+            </ul>
           </div>
         </section>
 
         <section id="education">
           <h2>Education</h2>
           <div class="item">
-            <h3>Degree / School Name</h3>
-            <p class="meta">Location · 2021 — 2025</p>
-            <p>Add your subject, specialization, achievements or relevant coursework.</p>
+            <h3>PhD Student in Biological Physics</h3>
+            <p class="meta">Biozentrum, University of Basel · June 2022 — Present</p>
+          </div>
+          <div class="item">
+            <h3>Master of Science in Physics</h3>
+            <p class="meta">Ludwig Maximilian University of Munich · 2019 — 2022</p>
+          </div>
+          <div class="item">
+            <h3>Bachelor of Science in Physics</h3>
+            <p class="meta">University of Groningen · 2015 — 2018</p>
           </div>
         </section>
 
-        <section>
+        <section id="skills">
           <h2>Skills</h2>
-          <div class="skills">
-            <span class="tag">Communication</span>
+          <div class="tags">
+            <span class="tag">Matlab</span>
+            <span class="tag">Python</span>
+            <span class="tag">Image Analysis</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Automated Microscopy</span>
+            <span class="tag">Mathematica</span>
+            <span class="tag">Unix/Linux</span>
+            <span class="tag">Scientific Computing</span>
+            <span class="tag">Mentorship</span>
             <span class="tag">Teamwork</span>
-            <span class="tag">Organization</span>
-            <span class="tag">Problem Solving</span>
-            <span class="tag">Microsoft Office</span>
-            <span class="tag">English</span>
           </div>
         </section>
 
         <section class="full">
-          <h2>Projects</h2>
+          <h2>Teaching, Leadership & Service</h2>
           <div class="item">
-            <h3>Project Name</h3>
-            <p class="meta">Personal / Academic Project</p>
-            <p>Describe a project you are proud of. Explain what you made and what you learned.</p>
+            <h3>Teaching and Mentorship</h3>
+            <ul>
+              <li>Co-developed lecture materials for Physics of Life for Biology Bachelor students.</li>
+              <li>Organised computational modules for a Biology block course attended by 60 students.</li>
+              <li>Mentored Bachelor, high-school and summer research students.</li>
+            </ul>
           </div>
           <div class="item">
-            <h3>Another Project</h3>
-            <p class="meta">Optional</p>
-            <p>Add another project, portfolio piece, certificate or achievement.</p>
+            <h3>PhD Representative</h3>
+            <p class="meta">University of Basel · November 2024 — November 2025</p>
+            <p>Organised interdepartmental networking events for PhD students.</p>
           </div>
         </section>
 
         <section class="full" id="contact">
           <h2>Contact</h2>
           <div class="contact-list">
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-            <p>Location: Your City, Your Country</p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+            <p>Email: <a href="mailto:andreea.chelban@unibas.ch">andreea.chelban@unibas.ch</a> · <a href="mailto:oana.chelban@gmail.com">oana.chelban@gmail.com</a></p>
+            <p>Phone: <a href="tel:+41772787277">+41 77 278 72 77</a></p>
+            <p>Location: Basel, Switzerland</p>
             <p>GitHub: <a href="https://github.com/andreeachelban">github.com/andreeachelban</a></p>
           </div>
         </section>
       </div>
     </main>
 
-    <footer>
-      © 2026 Andreea Chelban. Built with GitHub Pages.
-    </footer>
+    <footer>© 2026 Andreea-Oana Chelban. Built with GitHub Pages.</footer>
   </div>
 </body>
 </html>
+
